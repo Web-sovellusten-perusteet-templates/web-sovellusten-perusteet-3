@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <!-- TEHTAVA 1: Lisaa viewport meta -tagi tahan -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>W1L3 — Flexbox-kotitehtava</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigointipalkki -->
+  <!-- TEHTAVA 2: Tee nav Flexbox-containeriksi CSS:ssa -->
+  <nav class="nav">
+    <a class="nav__logo" href="#">Sivusto</a>
+    <ul class="nav__linkit">
+      <li><a href="#">Etusivu</a></li>
+      <li><a href="#">Tuotteet</a></li>
+      <li><a href="#">Blogi</a></li>
+      <li><a href="#">Yhteystiedot</a></li>
+    </ul>
+  </nav>
+
+  <!-- Paasisalto -->
+  <!-- TEHTAVA 3: Rajoita sisaltoalueen leveys CSS:ssa -->
+  <main class="sisalto">
+
+    <h1>Tuotteet</h1>
+
+    <!-- TEHTAVA 4: Tee korttirivisto Flexboxilla (flex-wrap + gap)
+         TEHTAVA 6: Kortit 3 sarakkeessa desktopilla, 1 sarakkeessa alle 600 px -->
+    <div class="kortit">
+
+      <article class="kortti">
+        <!-- TEHTAVA 5: Kuva: width 100%, kiintea korkeus, object-fit: cover -->
+        <img src="img/kuva1.jpg" alt="Eravarusteet — reppu ja kartta">
+        <div class="kortti__teksti">
+          <h2>Erareppu Pro</h2>
+          <p>Kestava 40 litran reppu retkeilyyn ja vaellukseen. Ergonominen selkajarja ja saankonkestava materiaali.</p>
+        </div>
+      </article>
+
+      <article class="kortti">
+        <img src="img/kuva2.jpg" alt="Polkupyora kaupunkiymparistossa">
+        <div class="kortti__teksti">
+          <h2>Kaupunkifillari</h2>
+          <p>Kevyt alumiinipyora kaupunkiajoon. 7-vaihteinen, kestava ja helposti huollettava.</p>
+        </div>
+      </article>
+
+      <article class="kortti">
+        <img src="img/kuva3.jpg" alt="Juomapullo urheilukaytolle">
+        <div class="kortti__teksti">
+          <h2>Termospullo 750 ml</h2>
+          <p>Pitaa juoman kuumana 12 tuntia ja kylmana 24 tuntia. Ruostumaton terasrakenne, BPA-vapaa.</p>
+        </div>
+      </article>
+
+    </div><!-- .kortit -->
+
+  </main>
+
+</body>
+</html>

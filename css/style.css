@@ -1,0 +1,124 @@
+/* ==========================================================
+   W1L3 — Flexbox-kotitehtava
+   Kirjoita CSS TODO-kohtiin. Valmiita perustyyleja ei tarvitse muuttaa.
+   ========================================================== */
+
+/* --- Perustyylit (annettu valmiina) --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+.nav {
+  background: #1f2933;
+  padding: 0.75rem 1.5rem;
+}
+
+.nav__logo {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav__linkit a {
+  color: #e4e7eb;
+  text-decoration: none;
+}
+
+.kortti {
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.kortti__teksti {
+  padding: 1rem;
+}
+
+.kortti h2 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* ==========================================================
+   TEHTAVA 2 — Navigointipalkki Flexboxilla
+   Vaatimus: .nav on Flexbox-rivi, logo vasemmalla ja linkit oikealla,
+   elementit pystysuunnassa keskitettyina.
+   Muista myos .nav__linkit: listan oletustyyli pois ja linkit rinnakkain.
+   ========================================================== */
+
+.nav {
+  /* TODO: display, justify-content, align-items */
+}
+
+.nav__linkit {
+  /* TODO: list-style, margin, padding, display, gap */
+}
+
+
+/* ==========================================================
+   TEHTAVA 3 — Sisaltoalueen rajoitus
+   Vaatimus: max-width 1100px ja keskitys margin: 0 auto.
+   ========================================================== */
+
+.sisalto {
+  /* TODO: max-width, margin, padding */
+}
+
+
+/* ==========================================================
+   TEHTAVA 4 — Kortit allekkain (mobiili-ensin)
+   Vaatimus: .kortit on Flexbox-container, jonka suunta on mobiilissa
+   pystysuora. Silloin kortit asettuvat allekkain, yksi per rivi.
+   Jokainen kortti vie koko rivin leveyden -> flex-basis: 100%.
+   ========================================================== */
+
+.kortit {
+  /* TODO: display: flex ja flex-direction: column */
+
+}
+
+.kortti {
+  /* TODO: flex-basis 100% (kortti tayttaa rivin leveyden) */
+
+}
+
+
+/* ==========================================================
+   TEHTAVA 5 — Kortin kuva
+   Vaatimus: kuva tayttaa kortin koko leveyden riippumatta siita,
+   kuinka levea kortti kulloinkin on -> width: 100%.
+   ========================================================== */
+
+.kortti img {
+  /* TODO: width 100% */
+}
+
+
+/* ==========================================================
+   TEHTAVA 6 — Media query: 3 saraketta desktopilla
+   Vaatimus: vahintaan 600 px leveilla naytoilla kortit ovat 3 rinnakkain.
+   Kaanna .kortit-containerin suunta riviksi ja lisaa korttien valiin gap.
+   Korttiin itseensa ei tarvitse koskea.
+
+   Miksi sarakkeita tulee kolme? Kortteja on kolme ja jokaisen
+   flex-basis on 100 %. Koska rivitysta ei ole (ei flex-wrap: wrap),
+   kortit kutistuvat flex-shrinkin ansiosta keskenaan yhta leveiksi,
+   eli kukin saa kolmanneksen rivista.
+   ========================================================== */
+
+@media (min-width: 600px) {
+
+  .kortit {
+    /* TODO: flex-direction: row ja gap korttien valiin */
+
+  }
+
+}
